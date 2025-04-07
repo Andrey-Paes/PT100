@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Conversor de Sensor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+      <h2>Conversor de Sensor PT-100</h2>
+  
+      <!-- Inputs e Botões -->
+      <label for="tipoSensor">Tipo de sensor:</label>
+      <select id="tipoSensor">
+        <option value="2">2 fios</option>
+        <option value="3">3 fios</option>
+        <option value="4">4 fios</option>
+      </select>
+      <button>Selecionar tipo de sensor</button>
+
+      <label for="resistencia">Resistência lida (Ω):</label>
+      <input type="number" id="resistencia">
+      <button>Registrar resistência</button>
+
+      <label for="faixa">Faixa do instrumento (ex: 0-100°C):</label>
+      <input type="text" id="faixa">
+      <button>Definir faixa</button>
+
+      <button>Converter para temperatura</button>
+      <button>Calcular saída 4-20 mA</button>
+    </div>
+  </div>
+  
+    <!-- Imagem fixa inferior central -->
+    <div class="imagem-inferior">
+        <img src="Img/PT100 2 FIOS.png" alt="Sensor">
+      </div>
+  
+    <script src="script.js"></script>
+  </body>
