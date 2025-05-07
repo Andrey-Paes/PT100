@@ -1,2 +1,2 @@
 # PT100
-Cálculos de Resistencia 
+App para realizar calculos                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
