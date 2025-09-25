@@ -1,111 +1,67 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  html, body {
-    height: 100%;
-    background: linear-gradient(135deg, #ea00ff, #4800ff);
-    font-family: Arial, sans-serif;
-    color: white;
-    overflow-x: hidden;
-  }
-  
-  .container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: calc(100vh - 40vh); /* altura total menos a imagem */
-    padding: 200px;
-    text-align: center;
-  }
-  
-  .formulario {
-    width: 90%;
-    max-width: 200px;
-    background: rgba(3, 2, 2, 0.654);
-    backdrop-filter: blur(50px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 20px;
-    padding: 30px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-  }
-  
-  label {
-    display: block;
-    margin-top: 20px;
-    font-weight: bold;
-  }
-  
-  input, select, button {
-    width: 100%;
-    padding: 18px;
-    margin-top: 8px;
-    margin-bottom: 12px;
-    font-size: 18px;
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    background: rgba(255, 255, 255, 0.1);
-    color: #fff;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-  }
-  
-  input::placeholder,
-  select,
-  button {
-    color: #fff;
-  }
-  
-  button {
-    background: rgba(155, 48, 201, 0.2);
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background: rgba(155, 48, 201, 0.35);
-  }
-  
-  .imagem-inferior {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    z-index: -1;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .imagem-inferior img {
-    width: 100%;
-    max-width: 100%;
-    height: 45%;
-    max-height: 100%;
-    object-fit: cover;
-    display: block; /* ← Isso aqui é o certo! */
-    margin: 0 auto;
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* sensor sempre embaixo */
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: #343434;
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
 
-  
-  }
-  
-  /* RESPONSIVIDADE EXTRA */
-  @media (max-width: 600px) {
-    .formulario {
-      padding: 20px;
-    }
-  
-    input, select, button {
-      font-size: 14px;
-      padding: 12px;
-    }
-  
-    .imagem-inferior img {
-      height: 30vh;
-    }
-  }
-  
+/* Inputs agora empilhados verticalmente */
+.inputs-container {
+  display: flex;
+  flex-direction: column; /* vertical */
+  gap: 15px;
+  margin-bottom: -90px; /* espaço acima do sensor */
+  width: 220px; /* largura fixa dos retângulos */
+  align-items: center;
+}
+
+.input-box {
+  background: #49484c8e; /* transparente esbranquiçado */
+  backdrop-filter: blur(10px); /* efeito vidro */
+  -webkit-backdrop-filter: blur(10px); /* suporte Safari */
+  border-radius: 100px; /* bordas arredondadas */
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5px;
+  width: 130%;
+  align-items: center;
+  border: 1px solid rgba(25, 26, 26, 0.2); /* leve contorno para destacar */
+}
+
+.input-box h3 {
+  margin: 0 0 10px 0;
+  font-size: 16px;
+  text-align: center;
+}
+
+input {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  width: 100px;
+  text-align: center;
+}
+
+button {
+  padding: 5px 20px;
+  border-radius: 50px;
+  border: none;
+  background: #1900ff59;
+  color: #ffffff60;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #8e8e8e;
+}
+
+canvas {
+  background: transparent;
+  margin-bottom: 10px; /* pequeno espaçamento abaixo dos inputs */
+}
