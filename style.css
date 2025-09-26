@@ -52,11 +52,11 @@ body {
 }
 
 .input-box h3 {
-  margin: 0 20px 0;
-  font-size: 20px;
+  margin:0 10px;
+  font-size: 15px;
   font-weight: normal;
-  color: silver;
-  padding-bottom: 10px;
+  color:whitelight;
+  padding-bottom: 0px;
 }
 
 .input-box input {
@@ -65,8 +65,7 @@ body {
   border: none;
   border-radius: 30px;
   font-size: 16px;
-  text-align: center;
-  color: white;
+  text-align: center;;
   background: rgba(27, 2, 2, 0.28);
 }
 button {
@@ -74,13 +73,16 @@ button {
   --border-width: 10px;
   appearance: none;
   position: relative;
-  padding: 20px;
+  padding:10px;
   border: 50px;
   background-color: #1502020a;
   font-family: "Segoe UI", sans-serif;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 40;
   color: #ffffffd0;
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  overflow: hidden;
   z-index: -1;
 }
 
@@ -150,17 +152,19 @@ button:active {
     width: 40vw;
   }
 }
-  body {
-    font-size: 14px;
-    padding: 0 20px;
-    margin-bottom: 80px;
-  }
+body {
+  font-size: 14px;
+  padding: 0 20px;
+  margin-bottom: 80px;
+}
   @media (max-width: 375px) {
-  .input-box input {
-  margin-top: none;
-  margin-bottom: 400;
-  width: 100px;
-  padding: 1px;
-  border-radius: 30px;
-  font-size: 11px;
+    .input-box input {
+      margin-top: none;
+      margin-bottom: 400;
+      width: 100px;
+      padding: 1px;
+      border-radius: 30px;
+      font-size: 11px;
+    }
   }
+}
