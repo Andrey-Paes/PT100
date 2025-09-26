@@ -2,38 +2,33 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <title>Sensor PT100 - Conversão 4-20mA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio com Sensor</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Canvas do fundo -->
+    <canvas id="galaxy"></canvas>
+
+    <!-- Imagem do sensor -->
+    <img src="Img/pt100 3 fios.png" alt="Sensor" class="sensor-image" />
+
+    <!-- Inputs -->
     <div class="inputs-container">
-      <!-- Retângulo 1: Faixa do instrumento -->
       <div class="input-box">
-        <h3>Faixa do instrumento (°C)</h3>
-        <input
-          type="number"
-          id="faixa"
-          placeholder="Ex: 150"
-          min="0"
-          max="150"
-        />
+        <h3>Faixa (°C)</h3>
+        <input id="faixa" type="number" placeholder=" 0 a 100°C " />
       </div>
-
-      <!-- Retângulo 2: Resistência PT100 -->
       <div class="input-box">
-        <h3>Resistência PT100 (Ω)</h3>
-        <input type="number" id="res" placeholder="Ex: 100" />
+        <h3>Resistência (Ω)</h3>
+        <input id="res" type="number" placeholder=" Ex: 120Ω " />
       </div>
-
-      <!-- Retângulo 3: Saída 4-20mA -->
       <div class="input-box">
-        <h3>Saída 4-20mA</h3>
-        <input type="text" id="saida" readonly placeholder="4–20 mA" />
-        <button id="btnCalcular">Calcular</button>
+        <h3>Saída</h3>
+        <input id="saida" type="text" readonly />
       </div>
+      <button id="btnCalcular">Calcular</button>
     </div>
-
-    <canvas id="sensor" width="600" height="750"></canvas>
 
     <script src="script.js"></script>
   </body>
