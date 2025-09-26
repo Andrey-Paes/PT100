@@ -134,23 +134,11 @@ button::after {
 button:active {
   --border-width: 50px;
 }
-/* Telas até 768px (celulares e tablets) */
-@media (max-width: 768px) {
-  .inputs-container {
-    bottom: 300px; /* sobe os inputs */
-    gap: 10px;
-  }
-
-  #sensor-img {
-    width: 90vw;
-    bottom: -30px;
-  }
-}
 
 /* Telas muito pequenas (até 480px, celular em pé) */
 @media (max-width: 375px) {
   .inputs-container {
-    padding: nene;
+    padding: none;
     margin-top: none;
     margin-bottom: 290px;
     bottom: 1px;
